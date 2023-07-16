@@ -1,0 +1,69 @@
+.ProjectCard {
+  border:2px solid rgba(123,74,226,.5);
+  width:353px;
+  height:442px;
+  border-radius:16px;
+  padding:24px;
+  cursor: default;
+  position:relative;
+}
+.ProjectCard h3 {
+  font-weight:600;
+  font-size:23px;
+  margin-bottom:15px;
+  opacity:0.95;
+}
+.ProjectCard > p {
+  opacity:.52;
+  line-height:1.3;
+  margin-bottom:25px;
+  white-space:pre-wrap;
+}
+.skill {
+  background:rgba(123,74,226,.1);
+  color:#7B4AE2;
+  font-weight:700;
+  width:103px;
+  height:27px;
+  padding:0 8px;
+  border-radius:8px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:10px;
+}
+.ProjectCard:hover .detail {
+  opacity:1;
+}
+.detail {
+  position:absolute;
+  opacity:0;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border-radius:16px;
+  background:rgba(0,0,0,.7);
+  transition:.3s;
+}
+.btn {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color:#ffffffa9;	
+	display:flex;
+  justify-content:center;
+  align-items:center;
+	width:150px;
+	height:50px;
+	border:2px #808080 solid;
+	border-radius:5px;	
+  font-weight:500;
+  cursor: pointer;
+}
+.btn:hover {
+  color:#ffffffe0;
+  background:#6a40c485;
+  border-color:#7a4ae263;
+}

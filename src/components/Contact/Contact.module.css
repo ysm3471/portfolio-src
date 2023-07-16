@@ -1,0 +1,71 @@
+.Contact {
+  width:700px;
+  margin:auto;
+  margin-bottom:200px;
+}
+.Contact h3 {
+  font-size:50px;
+  text-align:center;
+  margin-bottom:50px;
+  cursor:default;
+}
+.Contact h3 div {
+  width:140px;
+  height:45px;
+  margin:auto;
+  margin-bottom:15px;
+}
+.content {
+  display:flex;
+  color:#7B4AE2;
+  justify-content:center;
+  align-items:center;
+  font-size:18px;
+}
+.email {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-right:150px;
+}
+.email > p {
+  color:rgba(255, 255, 255, .5);
+}
+.email p {
+  margin-bottom:5px;
+}
+.emailImg {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+.emailImg div {
+  width:40px;
+  height:40px;
+  margin-bottom:5px;
+}
+.paste {
+  margin-top:10px;
+  width:32px;
+  height:32px;
+  cursor: pointer;
+}
+.paste p {
+  margin-left:-15px;
+  opacity:.9;
+}
+.topBtn {
+  display:flex;
+  align-items:center;
+  cursor: pointer;
+  margin-right:15px;
+}
+.topBtn p {
+  margin-right:3px;
+}
+.topBtn div {
+  width:32px;
+  height:32px;
+}

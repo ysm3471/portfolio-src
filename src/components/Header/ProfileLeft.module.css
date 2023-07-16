@@ -1,0 +1,29 @@
+.ProfileLeft {
+  margin-top: 95px;
+  font-size:35px;
+  font-family:"GmarketSansTTFMedium";
+  letter-spacing:-1px;
+  cursor:default;
+}
+.ProfileLeft h1 {
+  font-weight:500;
+  line-height:1;
+  margin-bottom:5px;
+}
+.ProfileLeft h1 p:first-child {
+  margin-left:4px;
+}
+.text {
+  font-size:23px;
+  padding:10px
+}
+.text p {
+  line-height:1.4;
+  margin-left:7px;
+}
+.text p:first-child {
+  opacity:.80;
+}
+.name {
+  color:#FF7D7D
+}

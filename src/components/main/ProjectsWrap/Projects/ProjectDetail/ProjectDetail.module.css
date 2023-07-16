@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+
+.ProjectDetail {
+  width:75%;
+  min-width:1200px;
+  height:90vh;
+  background:#d0ceda;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  border-radius:20px;
+  z-index:9999;
+  padding:40px;
+  color:#000;
+  overflow-y:scroll;
+}
+/* 스크롤바 관련 */
+  .ProjectDetail::-webkit-scrollbar {
+    width:13px;
+    height:20px;
+  }
+  .ProjectDetail::-webkit-scrollbar-thumb {
+    background-color: hsla(0, 0%, 42%, 0.49);
+    border-radius: 20px;
+    border:3px solid #d0ceda;;    /* 스크롤바에 여백을 주는 방법. margin이나 padding이 안 먹기 때문에 border를 줘서 뜬 공간이 있는 것처럼 보이게 함 */
+  }
+  /* 스크롤바의 상단,하단에 빈 공간을 주는 방법 */
+  .ProjectDetail::-webkit-scrollbar-button:vertical:start:decrement,
+  .ProjectDetail::-webkit-scrollbar-button:vertical:start:increment {
+      display: block;
+      height: 10px;
+  }
+
+  .ProjectDetail::-webkit-scrollbar-button:vertical:end:decrement {
+      display: block;
+      width: 25px;
+  }
+.img {
+  cursor: pointer;
+  height:70%;
+}
+.contentBox {
+  margin-top:20px;
+  padding:0 20px;
+}
+.ProjectDetail h3 {
+  font-size:30px;
+  font-weight:500;
+  border-bottom:2px solid #636A89;
+  padding-bottom:15px;
+  cursor:default;
+}
+.content {
+  display:flex;
+  justify-content:space-between;
+  margin-top:30px;
+  padding:0 10px;
+}
+.leftContent {
+  width:20%;
+}
+.leftContent > div {
+  display:flex;
+  justify-content:left;
+  margin-bottom:15px;
+  align-items:center;
+  cursor:default;
+}
+.leftContent > div > div:not(.github) {
+  width:50%;
+}
+.leftContent > div > div:first-child {
+  font-weight:600;
+  font-size:18px;
+}
+.leftContent > div > div:last-child {
+  font-weight:500;
+  color:#535972;
+  font-size:17px;
+}
+.rightContent {
+  width:70%;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align:left;
+  margin-right:40px;
+  font-size:17px;
+  opacity:.9;
+  white-space:pre-wrap;   /* \n을 사용하여 줄바꿈을 시도하고 싶으면 추가해야한다 */
+}
+.github {
+  width:32px;
+  height:32px;
+  cursor: pointer;
+}
+.cancleBtn {
+  width:19px;
+  height:19px;
+  position:absolute;
+  right:15px;
+  top:12px;
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.ProjectsWrap {
+  width:1600px;
+  height:1200px;
+  margin:auto;
+  margin-top:400px;
+}
+.head {
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:120px;
+}

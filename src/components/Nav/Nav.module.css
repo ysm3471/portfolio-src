@@ -1,0 +1,14 @@
+.Nav {
+  text-align:right;
+  margin:42px 102px 100px 0;
+}
+.Nav li {
+  list-style:none;
+  cursor: pointer;
+  display: inline-block;
+  margin-right:60px;
+  font-size:18px;
+}
+.Nav li:hover {
+  color:#00FFA3;
+}

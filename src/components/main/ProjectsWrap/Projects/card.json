@@ -1,0 +1,60 @@
+{
+  "data":[
+    {
+      "id":1,
+      "title":"Youtube",
+      "content":"처음으로 만들어본 사이트입니다.\nHTML5를 사용하여 레이아웃만 잡아보았으며 Flex를 사용했습니다",
+      "useSkills":"HTML5",
+      "img":"img/youtube.png"
+    },
+    {
+      "id":2,
+      "title":"LINE",
+      "content":"글로벌 기업인 LINE사 홈페이지의 copy site입니다. 총 3개의 페이지를 만들었으며, 각각의 슬라이드를 통해 해당 사이트로 이동 가능합니다",
+      "useSkills":"JavaScript",
+      "img":"img/Line.png"
+    },
+    {
+      "id":3,
+      "title":"LINE(MB)",
+      "content":"앞에서 만들었던 LINE의 적응형 모바일 페이지입니다. 모바일 레이아웃에는 어떻게 css를 사용해야 하는지, 실제 사이트를 참고해서 만들었습니다.",
+      "useSkills":"JavaScript",
+      "img":"img/Line-mb.png"
+    },
+    {
+      "id":4,
+      "title":"여행사이트(Team Project)",
+      "content":"팀원들과의 협업을 통해 만든 반응형 사이트입니다. pc, 태블릿, 모바일 버전이 존재하며, 반응형 레이아웃은 grid를 사용하였습니다.",
+      "useSkills":"JavaScript",
+      "img":"img/team.png"
+    },
+    {
+      "id":5,
+      "title":"환율 검색 사이트",
+      "content":"처음으로 외부 api를 사용하여 만들어본 사이트입니다. 주요 기능은 검색, pagination, 북마크입니다. ",
+      "useSkills":"JavaScript",
+      "img":"img/fund.png"
+    },
+    {
+      "id":6,
+      "title":"날씨앱(Pwa)",
+      "content":"React를 사용해서 만든 Pwa 앱입니다. \n기상청과 카카오지도 api를 사용하였으며 그 외 다양한 외부 라이브러리를 사용해보았습니다.",
+      "useSkills":"React",
+      "img":"img/weather.png"
+    },
+    {
+      "id":7,
+      "title":"음악 추천 사이트",
+      "content":"Next js를 사용해서 만든 웹사이트입니다. DB는 Firebase를 사용하였고 로그인 기능은 Next-auth를 사용하였습니다.",
+      "useSkills":"Next js",
+      "img":"img/music.png"
+    },
+    {
+      "id":8,
+      "title":"채팅사이트",
+      "content":"React router와 React Query를 사용해 만든 웹사이트입니다. DB는 Firebase를 사용하였고 Cookie를 사용해 로그인 정보를 저장하는 방식입니다.",
+      "useSkills":"React",
+      "img":"img/chat.png"
+    }
+  ]
+}
