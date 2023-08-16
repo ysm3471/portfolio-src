@@ -67,7 +67,7 @@
   align-items:center;
   cursor:default;
 }
-.leftContent > div > div:not(.github) {
+.leftContent > div > div:not(.github,.ts) {
   width:50%;
 }
 .leftContent > div > div:first-child {
@@ -93,6 +93,11 @@
   height:32px;
   cursor: pointer;
 }
+.ts {
+  width:28px;
+  height:28px;
+  cursor: pointer;
+}
 .cancleBtn {
   width:19px;
   height:19px;
@@ -100,4 +105,17 @@
   right:15px;
   top:12px;
   cursor: pointer;
+}
+.prev, .next {
+  width:20px;
+  height:20px;
+  position:absolute;
+  cursor: pointer;
+}
+.prev {
+  left:15px;
+}
+.next {
+  transform:rotate(180deg);
+  right:15px;
 }

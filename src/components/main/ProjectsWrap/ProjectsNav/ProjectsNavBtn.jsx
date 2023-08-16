@@ -2,7 +2,8 @@ import React from 'react';
 import classes from './ProjectsNavBtn.module.css';
 import data from '../Projects/card.json'
 
-export default function ProjectsNavBtn({btnData,setCardData,setNavBtns,NavBtns,index,setShow}) {
+export default function ProjectsNavBtn({btnData,setCardData,setNavBtns,NavBtns,index,showToggle}) {
+  
   const {tag,img,active} = btnData
 
   function sortBtn() {    // project card를 sort해주는 함수
@@ -11,13 +12,13 @@ export default function ProjectsNavBtn({btnData,setCardData,setNavBtns,NavBtns,i
       return aa.useSkills === tag
     })
     setCardData(copy);
-    setShow(false)
+    showToggle(false)
     setActive();
   }
 
   function showAll() {    // 모두 보여주는 버튼
     setCardData(data.data);
-    setShow(false)
+    showToggle(false)
     setActive();
   }
 

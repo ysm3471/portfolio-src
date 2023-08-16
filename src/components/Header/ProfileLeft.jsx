@@ -6,7 +6,7 @@ export default function ProfileLeft() {
     <div className={classes.ProfileLeft}>
       <h1>
         <p>Front-end</p>
-        <p>developoer</p>        
+        <p>developer</p>        
       </h1>
       <div className={classes.text}>
         <p>Hi ! 👋, My name is</p>

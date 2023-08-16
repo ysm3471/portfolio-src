@@ -6,8 +6,9 @@ import data from './card-detail.json'
 import Slider from './Slider';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function ProjectDetail({ showToggle, num,on }) {
+export default function ProjectDetail({ showToggle, num,on,moveBtn}) {
     const cardData = data.data[num];
+
 
     return (
       <Modal>
@@ -44,6 +45,12 @@ export default function ProjectDetail({ showToggle, num,on }) {
                       <div>Git Hub</div>
                       <div className={classes.github} onClick={() => { window.open(cardData.github) }}><img src="img/github.png" alt="github" title="깃허브로 이동" /></div>
                     </div>
+                    {cardData.typescript && 
+                    <div>
+                      <div>TypeScript</div>
+                      <div className={classes.ts} onClick={() => { window.open(cardData.typescript) }}><img src="img/Typescript.png" alt="github" title="깃허브로 이동" /></div>
+                    </div>
+                    }
                   </div>
                   <div className={classes.rightContent}>
                     <p>{cardData.content}</p>
@@ -52,6 +59,26 @@ export default function ProjectDetail({ showToggle, num,on }) {
               </div>
               <div className={classes.cancleBtn} onClick={showToggle}>
                 <img src="img/cancle.png" alt="cancle" />
+              </div>
+              <div className={classes.prev} 
+              onClick={() => {
+                if(cardData.id !== 1) {
+                  moveBtn(cardData.id-2)
+                }
+                else alert('첫번째 프로젝트입니다.')
+                }
+                }>
+                <img src="img/prev.png" alt="prev" />
+              </div>
+              <div className={classes.next} 
+              onClick={() => {
+                if(cardData.id !== 5) {
+                  moveBtn(cardData.id)
+                }
+                else alert('마지막 프로젝트입니다.')
+              }}
+              >
+                <img src="img/prev.png" alt="next" />
               </div>
             </motion.div>          
           </>}

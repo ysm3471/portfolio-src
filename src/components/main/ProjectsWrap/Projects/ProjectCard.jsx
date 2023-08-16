@@ -2,13 +2,16 @@ import React from 'react';
 import classes from './ProjectCard.module.css'
 
 export default function ProjectCard({data,showToggle}) {
-  const {title, content, useSkills,img ,id} = data
+  const {title, content, useSkills,img ,id,typescript} = data
 
   return (
     <div className={classes.ProjectCard}>
       <h3>{title}</h3>
       <p>{content}</p>
-      <div className={classes.skill}>{useSkills}</div>
+      <div className={classes.skill}>
+        <div>{useSkills}</div>
+        {typescript && <div className={classes.skill}>Typescript</div>}
+      </div>
       <div className={classes.img}>
         <img src={img} alt={title} />
       </div>

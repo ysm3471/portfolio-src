@@ -12,6 +12,10 @@ export default function Projects({cardData}) {
     setOn(show => !show);
   }
 
+  function moveBtn(index) {
+    setNum(index);
+  }
+
   const cards = cardData.map((aa) => {    // key값을 대충 주면 sort시에 제대로 되지 않음
     return <ProjectCard data={aa} key={aa.id} showToggle={showToggle}/>
   })
@@ -20,7 +24,7 @@ export default function Projects({cardData}) {
       <div className={classes.Projects}>
         {cards}
       </div>
-      <ProjectDetail showToggle={showToggle} num={num} on={on}/>
+      <ProjectDetail showToggle={showToggle} moveBtn={moveBtn} num={num} on={on}/>
     </>
   )
 }

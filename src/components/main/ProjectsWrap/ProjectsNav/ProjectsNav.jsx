@@ -4,7 +4,7 @@ import ProjectsNavBtn from './ProjectsNavBtn';
 
 
 
-export default function ProjectsNav({ setCardData,setShow }) {
+export default function ProjectsNav({ setCardData,showToggle }) {
   const [NavBtns, setNavBtns] = useState([
     {
       tag: "All",
@@ -28,8 +28,8 @@ export default function ProjectsNav({ setCardData,setShow }) {
   ])
 
   const ProjectsNavBtns = NavBtns.map((aa, index) => {
-    if (aa.img) return <ProjectsNavBtn key={index} btnData={aa} NavBtns={NavBtns} setNavBtns={setNavBtns} setCardData={setCardData} setShow={setShow} index={index} />
-    else return <ProjectsNavBtn key={index} btnData={aa} NavBtns={NavBtns} setNavBtns={setNavBtns} setCardData={setCardData} setShow={setShow} index={index} />
+    if (aa.img) return <ProjectsNavBtn key={index} btnData={aa} NavBtns={NavBtns} setNavBtns={setNavBtns} setCardData={setCardData} showToggle={showToggle} index={index} />
+    else return <ProjectsNavBtn key={index} btnData={aa} NavBtns={NavBtns} setNavBtns={setNavBtns} setCardData={setCardData} showToggle={showToggle} index={index} />
   })
 
   return (

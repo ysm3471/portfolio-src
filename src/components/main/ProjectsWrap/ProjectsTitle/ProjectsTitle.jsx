@@ -1,7 +1,7 @@
-import React from 'react';
+import React,{memo} from 'react';
 import classes from './ProjectsTitle.module.css'
 
-export default function ProjectsTitle() {
+function ProjectsTitle() {
   return (
     <div className={classes.ProjectsTitle}>
       <div className={classes.img}>
@@ -11,3 +11,5 @@ export default function ProjectsTitle() {
     </div>
   )
 }
+
+export default memo(ProjectsTitle);   // 한 번만 리렌더링 되도록 

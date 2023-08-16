@@ -15,11 +15,15 @@ export default function ProjectsWrap() {
     setShow(true);
   }, [cardData])
 
+  function showToggle(boolean) {
+    setShow(boolean)
+  }
+
   return (
     <div className={classes.ProjectsWrap} id='2'>
       <div className={classes.head}>
         <ProjectsTitle />
-        <ProjectsNav setCardData={setCardData} setShow={setShow} />
+        <ProjectsNav setCardData={setCardData} showToggle={showToggle} />
       </div>
       {show && <motion.div
         initial={{ y: 50, opacity: 0 }}
